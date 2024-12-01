@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFD100;
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh; /* Забезпечує висоту на весь екран */
+}
+
+.container {
+    padding: 40px 20px; /* Відступи зверху, знизу та з боків */
+    box-sizing: border-box; /* Включає padding у загальну ширину */
+    margin: auto; /* Центрує контент */
+    padding-top: 0;
+}
+
+.logo {
+    width: 250px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.cat-logo img {
+    width: 330px;
+    margin: 20px 0;
+}
+
+.demo-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.demo-btn:hover {
+    background-color: #ffecb3;
+}
+
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центруємо елементи по горизонталі */
+    gap: 5px; /* Відстань між рисочкою і трикутником */
+    margin: 40px auto; /* Відступи зверху і знизу */
+    animation: bounce 1.5s infinite; /* Анімація підстрибування */
+}
+
+.line {
+    width: 4px; /* Товщина рисочки */
+    height: 20px; /* Довжина рисочки */
+    background-color: #000; /* Колір рисочки */
+    border-radius: 2px; /* Згладжені краї для краси */
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; /* Ліва сторона трикутника */
+    border-right: 10px solid transparent; /* Права сторона трикутника */
+    border-top: 15px solid #000; /* Верхня сторона трикутника (чорний колір) */
+}
+
+/* Анімація для стрілки */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+
